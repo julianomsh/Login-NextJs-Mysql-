@@ -6,7 +6,7 @@ import NavBar from '../components/NavBar'
 export default function Login() {
 
 
-const [ loginemail, setloginemail] = useState('');
+const [ loginUsername, setloginUsername] = useState('');
 const [ loginPassword, setloginPassword] = useState('');
 
 
@@ -15,7 +15,7 @@ const [ loginPassword, setloginPassword] = useState('');
         <NavBar></NavBar>
        <h1>Login</h1>
        <form>
-            <input type='email' name='email' placeholder='E-mail' onChange={e => setloginemail(e.target.value)}></input>
+            <input type='text' name='username' placeholder='name' onChange={e => setloginUsername(e.target.value)}></input>
             <input type='password' name='password' placeholder='Senha' onChange={e => setloginPassword(e.target.value)}></input>  
             <button>Login</button>
        </form>
